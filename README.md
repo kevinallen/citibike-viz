@@ -27,7 +27,7 @@ Tableau is great for visualizing data, just make sure the data is structured pro
 
 SQLite made quick work of shaping and aggregating the data in a way amenable to Tableau. For example, in order to create a path between two points on a map in Tableau, it is necessary to have two rows for every row our the Citi Bike source data. After putting the raw data in a table in SQLite, the following query was used to get the data in the proper format for plotting paths.
 
-```
+```SQL
 INSERT INTO paths
 SELECT
     start_station_id || "-" || end_station_id, start_station_id,
@@ -48,6 +48,7 @@ FROM rawdata
 GROUP BY
     start_station_id, end_station_id, substr(starttime,1,10);
 ```
+More information on the cleaning process can be found in the [notes file](https://github.com/kevinallen/citibike-viz/blob/gh-pages/notes.md).
 
 ### Usability Testing
 Usability testing was conducted in order to find confusing and intuitive elements of the visualizations. The usability testing was conducted as a one-on-one interview session with the users. The users were asked to answer questions, and their audio responses and interaction with the visualization were recorded.
