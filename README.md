@@ -22,7 +22,7 @@ Here is an example row:
 ```
 Because of the popularity of the bike share program, and the limited resources and performance of Tableau Public, it was necessary to focus on only a single year. This was still 8,018,751 rows!
 
-### Cleaning the data
+### Cleaning the Data
 Tableau is great for visualizing data, just make sure the data is structured properly first. Many hours were spent in vain attempting to manipulate the source data in Tableau.
 
 SQLite made quick work of shaping and aggregating the data in a way amenable to Tableau. For example, in order to create a path between two points on a map in Tableau, it is necessary to have two rows for every row our the Citi Bike source data. After putting the raw data in a table in SQLite, the following query was used to get the data in the proper format for plotting paths.
@@ -32,7 +32,7 @@ INSERT INTO paths
 SELECT
     start_station_id || "-" || end_station_id, start_station_id,
     start_station_name, 0,0, start_station_latitude, start_station_longitude,
-    count(*), avg(tripduration), substr(starttime,1,10), start_station_id,
+    COUNT(*), AVG(tripduration), SUBSTR(starttime,1,10), start_station_id,
     end_station_id
 FROM rawdata
 GROUP BY
@@ -41,8 +41,8 @@ GROUP BY
 INSERT INTO paths
 SELECT
     start_station_id || "-" || end_station_id, end_station_id, end_station_name,
-    avg(tripduration), count(*), end_station_latitude, end_station_longitude,
-    count(*), avg(tripduration), substr(starttime,1,10), start_station_id,
+    AVG(tripduration), COUNT(*), end_station_latitude, end_station_longitude,
+    COUNT(*), AVG(tripduration), SUBSTR(starttime,1,10), start_station_id,
     end_station_id
 FROM rawdata
 GROUP BY
@@ -56,7 +56,15 @@ Usability testing was conducted in order to find confusing and intuitive element
 #####Interviewee #1
  - [Popular Citi Bike Trips](https://drive.google.com/open?id=0BzZOSSpYDxvYd0dYZ19vb01QdUE)
  - [Popular Citi Bike Origins and Destinations](https://drive.google.com/open?id=0BzZOSSpYDxvYNmxnNFIxOVdsUmM)
+ - [Bike Rental Intervals](https://drive.google.com/open?id=0BzZOSSpYDxvYVGFocjRtNC1maWM)
+ - [Distribution of Traffic](https://drive.google.com/open?id=0BzZOSSpYDxvYcDNJMlgySzhnS2M)
+ - [Underused Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTGh1bFpaeThwWWM)
+ - [Maintenance](https://drive.google.com/open?id=0BzZOSSpYDxvYTkV3SXVudU1IU28)
 
 #####Interviewee #2
  - [Popular Citi Bike Trips](https://drive.google.com/open?id=0BzZOSSpYDxvYaUJ1Smw5a2kwM28)
  - [Popular Citi Bike Origins and Destinations](https://drive.google.com/open?id=0BzZOSSpYDxvYemlialFHc0dGSjg)
+ - [Bike Rental Intervals](https://drive.google.com/open?id=0BzZOSSpYDxvYUkJmeFV6c1R3YW8)
+ - [Distribution of Traffic](https://drive.google.com/open?id=0BzZOSSpYDxvYemRSVEJ2MTN1T1k)
+ - [Underused Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTXMtaHBjM2NxSDQ)
+ - [Maintenance](https://drive.google.com/open?id=0BzZOSSpYDxvYNzVaT1JEanVtV3c)
