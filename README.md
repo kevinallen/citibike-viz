@@ -1,4 +1,5 @@
 # W209 Final Project
+##### By Juanjo Carin, Kevin Allen, Matt Hayes, and Rosalind Lee
 ### Visualizing Citi Bike Data
 Check out the [web site on Github](http://kevinallen.github.io/citibike-viz/).
 
