@@ -59,7 +59,7 @@ Usability testing was conducted in order to find confusing and intuitive element
  - [Popular Citi Bike Origins and Destinations](https://drive.google.com/open?id=0BzZOSSpYDxvYNmxnNFIxOVdsUmM)
  - [Bike Rental Intervals](https://drive.google.com/open?id=0BzZOSSpYDxvYVGFocjRtNC1maWM)
  - [Distribution of Traffic](https://drive.google.com/open?id=0BzZOSSpYDxvYcDNJMlgySzhnS2M)
- - [Underused Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTGh1bFpaeThwWWM)
+ - [Nearby Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTGh1bFpaeThwWWM)
  - [Maintenance](https://drive.google.com/open?id=0BzZOSSpYDxvYTkV3SXVudU1IU28)
 
 #####Interviewee #2
@@ -67,5 +67,10 @@ Usability testing was conducted in order to find confusing and intuitive element
  - [Popular Citi Bike Origins and Destinations](https://drive.google.com/open?id=0BzZOSSpYDxvYemlialFHc0dGSjg)
  - [Bike Rental Intervals](https://drive.google.com/open?id=0BzZOSSpYDxvYUkJmeFV6c1R3YW8)
  - [Distribution of Traffic](https://drive.google.com/open?id=0BzZOSSpYDxvYemRSVEJ2MTN1T1k)
- - [Underused Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTXMtaHBjM2NxSDQ)
+ - [Nearby Stations](https://drive.google.com/open?id=0BzZOSSpYDxvYTXMtaHBjM2NxSDQ)
  - [Maintenance](https://drive.google.com/open?id=0BzZOSSpYDxvYNzVaT1JEanVtV3c)
+
+#####Interviewee #3
+ - [Bike Rental Intervals](https://drive.google.com/open?id=0B3cqLO1xs1GIMWt5WlVaQUJ1MWs)
+ - [Distribution of Traffic](https://drive.google.com/open?id=0B3cqLO1xs1GIUlA4anFMeXhENlU)
+ - [Nearby Stations](https://drive.google.com/open?id=0B3cqLO1xs1GIN0FuRVl6cTJvYTQ)
