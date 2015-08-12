@@ -89,113 +89,24 @@ name='animate_transition' value='yes' /><param name='display_static_image' value
 value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' 
 
 value='true' /></object></div>
+
           <br/>
 		  <br/>
-          <p>The following visualization shows the time intervals in which each bike was rented. Hence, the X-axis corresponds to time (from 1st of June, 2014, to 31st 
-
-of May, 2015), and the Y-axis corresponds to bike IDs (from 14,529 to 21,907, though not all numbers in between are used: there are records from 6,617 bikes rather than 
-
-7,379). Each bike is plotted with a different color, but neither the ID number nor the color is important: this visualization is intended to find overall patterns.</p>
-          <p>Therefore, the length of the bars is proportional to the duration of a rental, and the white "gaps" between bars are also proportional to the time that 
-
-particular bike was not rented. You can filter by ranges of both time and bike IDs, either using the sliders or typing the desired start and end values. The bikes in 
-
-the Y-axis are not sorted by their ID number, but by the time they were rented for the first time, with those that were rented later at the bottom (so you will notice 
-
-that most of the bikes were already available the 1st of June, 2014, and some hundreds were added over the following 12 months).</p>
-		  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 
-
-654px; height: 719px;'><noscript><a href='#'><img alt='Rental Intervals per Bike ' 
-
-src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentalIntervalsperBike2&#47;RentalIntervalsperBike&#47;1_rss.png' style='border: none' 
-
-/></a></noscript><object class='tableauViz' width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param 
-
-name='site_root' value='' /><param name='name' value='RentalIntervalsperBike2&#47;RentalIntervalsperBike' /><param name='tabs' value='no' /><param name='toolbar' 
-
-value='yes' /><param name='static_image' 
-
-value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentalIntervalsperBike2&#47;RentalIntervalsperBike&#47;1.png' /> <param 
-
-name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' 
-
-value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' 
-
-value='true' /></object></div>
+          <p>The following visualization shows the time intervals in which each bike was rented. Hence, the X-axis corresponds to time (from 1st of June, 2014, to 31st of May, 2015), and the Y-axis corresponds to bike IDs (from 14,529 to 21,907, though not all numbers in between are used: there are records from 6,617 bikes rather than 7,379). Each bike is plotted with a different color, but neither the ID number nor the color are important: this visualization is intended to find overall patterns.</p>
+          <p>You can filter by ranges of both time and bike IDs, either using the sliders or typing the desired start and end values. The bikes in the Y-axis are not sorted by their ID number, but by the moment they were rented for the first time, with those that were rented later at the top (so you will notice that most of the bikes were already available the 1st of June, 2014, and some hundreds were added over the following 12 months).</p>
+          <p>The length of each bar is proportional to the duration of a rental, and the white "gaps" between bars are also proportional to the time that particular bike was not rented. This produces the effect of white columns every night, when most of the bikes are not rented, and a wider one the 28th of March, 2015, when for some reason the service was interrupted in every station during almost the whole day.</p>
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 719px;'><noscript><a href='#'><img alt='Rental Intervals per Bike ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentalIntervalsperBike3&#47;RentalIntervalsperBike&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='RentalIntervalsperBike3&#47;RentalIntervalsperBike' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentalIntervalsperBike3&#47;RentalIntervalsperBike&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
           <br/>
           <br/>
-		  <p>This next maps shows, for the 12 months of analysis, the distribution of outgoing or incoming traffic. I.e., where the bikes that were rented in a 
-
-particular station&mdash;"station under study," depicted in orange&mdash;went to (where they were returned ), or where they came from (where they were rented) when they 
-
-were returned at that station. The size of the dots are proportional to the amount of bikes returned at or rented in the station in that position of the map; most of 
-
-the bikes are rented for short trips so typically the biggest dots are around the station under study. You will notice that the orange dot may have a certain size: this 
-
-is because some users return their bike at the same station where they rented it. Consequently, that size does not change whether you select outgoing or incoming 
-
-traffic.</p>
-          <p>You can select the station under study either by selecting it from the whole list, or by typing its name&mdash;or even its first characters.  The bar below 
-
-the map shows the whole number of bikes rented in or returned at the station under study, distinguishing between those that were returned at the same station (orange) 
-
-or another (blue) for "outgoing" traffic, or those that were rented at the same station or another for "incoming" traffic. Hence, the total length of the bar is 
-
-proportional to the sum of the areas of all dots.</p>
-		  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 
-
-654px; height: 719px;'><noscript><a href='#'><img alt='Distribution of Traffic ' 
-
-src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TB&#47;TB4MC4CT7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' 
-
-width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;TB4MC4CT7' /> 
-
-<param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TB&#47;TB4MC4CT7&#47;1.png' /> <param 
-
-name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' 
-
-value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' 
-
-value='true' /></object></div>
+		  <p>The map below shows, for the 12 months of analysis, the distribution of outgoing or incoming traffic. I.e., where the bikes that were rented in a particular station&mdash;"station under study," depicted in orange&mdash;went to (where they were returned ), or where they came from (where they were rented) when they were returned at that station. The size of the dots are proportional to the amount of bikes returned at or rented in the station in that position of the map; most of the bikes are rented for short trips so typically the biggest dots are around the station under study, not far from it. You will notice that the orange dot may have a certain size: this is because some users return their bike at the same station where they rented it. Consequently, that size does not change whether you select outgoing or incoming traffic.</p>
+		  <p>You can select the station under study either by selecting it from the whole list, or by typing its name&mdash;or even its first characters. The bar below the map shows the whole number of bikes rented in or returned at the station under study, distinguishing between those that were returned at the same station (orange) or another (blue) for "outgoing" traffic, or those that were rented at the same station or another for "incoming" traffic. Hence, the total length of the bar is proportional to the sum of the areas of all dots.</p>
+		  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 719px;'><noscript><a href='#'><img alt='Distribution of Traffic ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofTraffic3&#47;DistributionofTraffic&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='DistributionofTraffic3&#47;DistributionofTraffic' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofTraffic3&#47;DistributionofTraffic&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
           <br/>
           <br/>
-          <p>In the following visualization you can select a station and a radius (in miles), and the map will show all the stations around the selected one, within the 
+          <p>In the following visualization you can select a station and a radius (in miles), and the map will show all the stations around the selected one, within the chosen radius (from 0.15 to 0.30 miles, in steps of 0.05 miles). Of course, the number of stations that are plotted depends on the radius you have selected. Each station is represented with a dot (a rhombus if it's the station of interest, and a circle for all its neighbors) whose size is proportional to the number of bikes that were rented in each station during the 12 months under study. The location of those stations is also shown in the small map to the right, to give a better idea of where they're located in New York City. The graphs on the lower right corner show how the total number of rentals in each station is distributed along the 12 months of study: you can see the exact values if you hover mouse over the lines of each graph.</p>
+          <p>Besides, if you hover the mouse over a station in the amp, you will see its name, the name of the station under study, the distance between them, and three percentages. The first one is the proportion of bikes rented in that station, compared to the total number of bikes rented in the depicted area (so all the stations shown sum up 100%); this percentage is also proportional to the size of the dot. The second percentage is the hypothetical rate if the amount of bikes rented had been equal in each station. Hence, it will be 25% if 4 stations are shown, 33.33% if 3 stations are shown, and so on. Finally, the third percentage, which is also shown in the map below the name of the stations, is the relative difference between the previous ones. The color of the dots depend on that percentage, varying from red (for negative differences) to gray (for differences close to zero) to blue (for positive differences). This allows us to determine if a station was more or less used than its neighbors. E.g., if four stations are shown in the map, the second percentage will be 25% for all of them: if the first percentages are 50%, 25%, 12.5%, and 12.5%, the third percentages will be 100%, 0%, -50%, and -50%, respectively, meaning that the number of bikes rented in each station was twice, equal, or half the number of bikes rented had the traffic been uniformly generated.</p>
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 719px;'><noscript><a href='#'><img alt='Nearby Stations ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NearbyStations3&#47;NearbyStations&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='NearbyStations3&#47;NearbyStations' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NearbyStations3&#47;NearbyStations&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
 
-chosen radius (from 0.15 to 0.30 miles, in steps of 0.05 miles). Of course, the number of stations that are plotted depends on the radius you have selected. Each 
-
-station is represented with a dot whose size is proportional to the number of bikes that were rented in each station during the 12 months under study. The location of 
-
-those stations is also shown in the small map to the right, to give a better idea of where they're located in New York City. The graphs on the lower right corner show 
-
-the number of bikes rented at those stations in each month, from June 2014 to May 2015: you can see the exact values if you hover mouse over the lines of each 
-
-graph.</p>
-          <p>Besides, if you hover the mouse over a station in the map, you will see its name, the name of the station under study, the distance between them, and two 
-
-percentages: the former is the proportion of bikes rented in that station, compared to the total number of bikes rented in the depicted area (so all the stations shown 
-
-sum up 100%; the same happen with the second percentage); the latter is the hypothetical rate if the amount of bikes rented had been equal in each station. Hence, that 
-
-second percentage will be 25% if 4 stations are shown, 33.33% if 3 stations are shown, and so forth. The comparison of each pair of percentages allows us to determine 
-
-if a station was much more or much less used than its "neighbors." E.g., if two stations are shown in the map, the second percentage will be 50% for both; if the first 
-
-percentage is 80% for one station and 20% for the other, we know that the number of bikes rented in the former station is 4 times the number bikes rented in the 
-
-latter.</p>
-          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; 
-
-height: 719px;'><noscript><a href='#'><img alt='Nearby Stations ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;84&#47;84S87GY2T&#47;1_rss.png' 
-
-style='border: none' /></a></noscript><object class='tableauViz' width='654' height='719' style='display:none;'><param name='host_url' value='https%3A%2F
-
-%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;84S87GY2T' /> <param name='toolbar' value='yes' /><param name='static_image' 
-
-value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;84&#47;84S87GY2T&#47;1.png' /> <param name='animate_transition' value='yes' /><param 
-
-name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' 
-
-/><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
 	  <br/>
 	  <br/>
 	  <p>The visualization allows you to see the top bikes that need maintenance by week. You can select the week using the slider. To increase or decrease the 
